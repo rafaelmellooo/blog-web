@@ -1,10 +1,23 @@
-import React from 'react';
+import { FiUser } from 'react-icons/fi';
 
-import { Container, Title } from './styles';
+import { Container, Nightfall, Author, Title } from './styles';
 
-const PostItem: React.FC = () => (
-  <Container>
-    <Title>Dólar fecha em alta, mas abaixo de R$ 4,90</Title>
+type PostItemProps = {
+  title: string;
+  image_url: string;
+  author: string;
+};
+
+const PostItem: React.FC<PostItemProps> = ({ title, image_url, author }) => (
+  <Container image={image_url}>
+    <Nightfall>
+      <Author>
+        <FiUser />
+        {author}
+      </Author>
+
+      <Title>{title}</Title>
+    </Nightfall>
   </Container>
 );
 
