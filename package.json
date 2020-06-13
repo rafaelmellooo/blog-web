@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@unform/core": "^2.1.0",
+    "@unform/web": "^2.1.0",
     "axios": "^0.19.2",
     "next": "9.4.4",
     "react": "16.13.1",
