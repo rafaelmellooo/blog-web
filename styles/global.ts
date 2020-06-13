@@ -5,6 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 
   body {
@@ -23,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 500;
   }
 
-  p, input, button {
+  p, input {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
   }
